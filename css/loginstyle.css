@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:
+        radial-gradient(circle closest-side, #f0e9e9 0%, #7d8288 50%, #443b58 100%),
+        linear-gradient(to right, #000000 0%, #ffffff 100%);
+}
+.box{
+    position: relative;
+    width: min(100% - 30px, 840px);
+    margin-inline: auto;
+    height: 450px;
+    background: #aba4b6;
+    border-radius: 8px;
+}
+.box form{
+    position: absolute;
+    inset: 4px;
+    background-image:
+        radial-gradient(circle closest-side, #f0e9e9 0%, #7d8288 50%, #443b58 100%),
+        linear-gradient(to right, #000000 0%, #ffffff 100%);
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index:  2;
+    display: flex;
+    flex-direction: column;
+}
+.box form h2{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding-bottom: 15px;
+}
+.box form .inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.box form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color:#443b58;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+ .links{
+    margin-top: .5rem;
+ }
+ .links a{
+    padding: auto;
+ }
+
+
+
+
+ /* footer */
+ .home-sci{
+    bottom: 0rem;
+    width: 170px;
+    display: flex;
+    justify-content:space-between;
+    
+  }
+
+
+  /* hover */
+  .home-sci a{
+    padding-left: 0rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    border-spacing: 1rem;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: .2rem solid rgb(68, 6, 83);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(64, 52, 75);
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .home-sci a:hover{
+    color: rgb(64, 52, 75);
+  }
+  .home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 50%;
+    width: 0;
+    height: 100%;
+    background: #cba3f5;
+    z-index: -1;
+    transition: .4s;
+  }
+  .home-sci a:hover::before{
+    width: 100%;
+  }
+  #paragraph{
+    margin-top: 3rem;
+  }
+  footer{
+    margin-top: 34rem;
+    margin-left: 2rem;
+  }
+.home-sci a{
+position: relative;
+margin-left:;
+}
